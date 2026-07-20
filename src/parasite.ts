@@ -44,7 +44,7 @@ function propagate(ns: NS, hosts: string[]): string[] {
     if (host == undefined || host == 'home') {
         return []
     }
-    const drainScript = "drain.js";
+    const drainScript = "share.js";
    
     ns.tprint(`Propagating to ${host}`);
     let nuked = remoteNuke(ns, ns.getServer(host));
